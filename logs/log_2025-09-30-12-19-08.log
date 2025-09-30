@@ -1,0 +1,39 @@
+[2025-09-30 12:19:08,863] logger - INFO - Flask application starting...
+[2025-09-30 12:19:08,879] werkzeug - WARNING -  * Debugger is active!
+[2025-09-30 12:19:08,879] werkzeug - INFO -  * Debugger PIN: 114-658-646
+[2025-09-30 12:19:17,873] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:19:17] "GET / HTTP/1.1" 200 -
+[2025-09-30 12:19:17,920] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:19:17] "[33mGET /static/images/Apexiq-logo-whitebg.jpeg HTTP/1.1[0m" 404 -
+[2025-09-30 12:19:17,921] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:19:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2025-09-30 12:19:17,950] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:19:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-09-30 12:19:21,747] logger - INFO - Sending messages to Groq API...
+[2025-09-30 12:19:22,039] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-09-30 12:19:22,056] logger - INFO - Received response from Groq API.
+[2025-09-30 12:19:22,056] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:19:22] "POST /api/chat HTTP/1.1" 200 -
+[2025-09-30 12:19:33,530] logger - INFO - Sending messages to Groq API...
+[2025-09-30 12:19:33,773] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-09-30 12:19:33,773] logger - INFO - Received response from Groq API.
+[2025-09-30 12:19:33,773] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:19:33] "POST /api/chat HTTP/1.1" 200 -
+[2025-09-30 12:19:40,706] logger - INFO - Sending messages to Groq API...
+[2025-09-30 12:19:40,906] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-09-30 12:19:40,906] logger - INFO - Received response from Groq API.
+[2025-09-30 12:19:40,906] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:19:40] "POST /api/chat HTTP/1.1" 200 -
+[2025-09-30 12:21:40,412] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:21:40] "GET / HTTP/1.1" 200 -
+[2025-09-30 12:21:40,460] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:21:40] "[33mGET /static/images/Apexiq-logo-whitebg.jpeg HTTP/1.1[0m" 404 -
+[2025-09-30 12:21:40,461] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:21:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2025-09-30 12:21:40,483] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:21:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-09-30 12:21:43,554] logger - INFO - Sending messages to Groq API...
+[2025-09-30 12:21:43,777] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-09-30 12:21:43,778] logger - INFO - Received response from Groq API.
+[2025-09-30 12:21:43,778] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:21:43] "POST /api/chat HTTP/1.1" 200 -
+[2025-09-30 12:21:54,163] logger - INFO - Sending messages to Groq API...
+[2025-09-30 12:21:54,919] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-09-30 12:21:54,919] logger - INFO - Received response from Groq API.
+[2025-09-30 12:21:54,919] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:21:54] "POST /api/chat HTTP/1.1" 200 -
+[2025-09-30 12:22:07,306] logger - INFO - Sending messages to Groq API...
+[2025-09-30 12:22:08,782] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-09-30 12:22:08,782] logger - INFO - Received response from Groq API.
+[2025-09-30 12:22:08,783] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:22:08] "POST /api/chat HTTP/1.1" 200 -
+[2025-09-30 12:22:17,875] logger - INFO - Sending messages to Groq API...
+[2025-09-30 12:22:18,076] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-09-30 12:22:18,076] logger - INFO - Received response from Groq API.
+[2025-09-30 12:22:18,077] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:22:18] "POST /api/chat HTTP/1.1" 200 -

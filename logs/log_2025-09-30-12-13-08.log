@@ -1,0 +1,23 @@
+[2025-09-30 12:13:08,932] logger - INFO - Flask application starting...
+[2025-09-30 12:13:08,940] werkzeug - WARNING -  * Debugger is active!
+[2025-09-30 12:13:08,944] werkzeug - INFO -  * Debugger PIN: 114-658-646
+[2025-09-30 12:13:12,458] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:13:12] "GET / HTTP/1.1" 200 -
+[2025-09-30 12:13:12,517] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:13:12] "[33mGET /static/images/Ap[2025-09-30 12:14:13,613] werkzeug - INFO -  * Restarting with stat
+[2025-09-30 12:15:34,000] werkzeug - INFO -  * Restarting with stat
+atic/css/styles.css HTTP/1.1[0m" 304 -
+[2025-09-30 12:13:12,537] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:13:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-09-30 12:13:17,892] logger - INFO - Sending messages to Groq API...
+[2025-09-30 12:13:18,109] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+[2025-09-30 12:13:18,109] logger - ERROR - Error communicating with Groq API: Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Student\Desktop\Custom-ChatGPT\App\api_client.py", line 23, in get_response
+    chat_completion = self.client.chat.completions.create(
+  File "C:\Users\Student\Desktop\Custom-ChatGPT\venv\lib\site-packages\groq\resources\chat\completions.py", line 456, in create
+    return self._post(
+  File "C:\Users\Student\Desktop\Custom-ChatGPT\venv\lib\site-packages\groq\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\Student\Desktop\Custom-ChatGPT\venv\lib\site-packages\groq\_base_client.py", line 1044, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+[2025-09-30 12:13:18,109] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:13:18] "POST /api/chat HTTP/1.1" 200 -
+[2025-09-30 12:14:13,584] werkzeug - INFO -  * Detected change in 'C:\\Users\\Student\\Desktop\\Custom-ChatGPT\\App\\api_client.py', reloading

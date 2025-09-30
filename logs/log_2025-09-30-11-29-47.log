@@ -1,0 +1,30 @@
+[2025-09-30 11:29:47,205] logger - INFO - Flask application starting...
+[2025-09-30 11:29:47,205] werkzeug - WARNING -  * Debugger is active!
+[2025-09-30 11:29:47,205] werkzeug - INFO -  * Debugger PIN: 114-658-646
+[2025-09-30 11:29:53,549] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:29:53] "GET / HTTP/1.1" 200 -
+[2025-09-30 11:29:53,597] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:29:53] "[33mGET /static/images/Apexiq-logo-whitebg.jpeg HTTP/1.1[0m" 404 -
+[2025-09-30 11:29:53,599] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:29:53] "GET /static/css/styles.css HTTP/1.1" 200 -
+[2025-09-30 11:29:53,616] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:29:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-09-30 11:30:01,620] logger - INFO - Sending messages to Groq API...
+[2025-09-30 11:30:01,823] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+[2025-09-30 11:30:01,839] logger - ERROR - Error communicating with Groq API: Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+[2025-09-30 11:30:01,839] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:30:01] "POST /api/chat HTTP/1.1" 200 -
+[2025-09-30 11:30:27,737] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:30:27] "GET / HTTP/1.1" 200 -
+[2025-09-30 11:30:27,761] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:30:27] "[33mGET /static/images/Apexiq-logo-whitebg.jpeg HTTP/1.1[0m" 404 -
+[2025-09-30 11:30:27,761] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:30:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2025-09-30 11:30:44,476] logger - INFO - Sending messages to Groq API...
+[2025-09-30 11:30:44,743] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+[2025-09-30 11:30:44,743] logger - ERROR - Error communicating with Groq API: Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+[2025-09-30 11:30:44,743] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:30:44] "POST /api/chat HTTP/1.1" 200 -
+[2025-09-30 11:32:34,298] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:32:34] "GET / HTTP/1.1" 200 -
+[2025-09-30 11:32:34,319] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:32:34] "[33mGET /static/images/Apexiq-logo-whitebg.jpeg HTTP/1.1[0m" 404 -
+[2025-09-30 11:32:34,320] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:32:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2025-09-30 11:32:53,692] logger - INFO - Sending messages to Groq API...
+[2025-09-30 11:32:53,946] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+[2025-09-30 11:32:53,946] logger - ERROR - Error communicating with Groq API: Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+[2025-09-30 11:32:53,946] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:32:53] "POST /api/chat HTTP/1.1" 200 -
+[2025-09-30 11:33:00,323] logger - INFO - Sending messages to Groq API...
+[2025-09-30 11:33:00,543] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+[2025-09-30 11:33:00,543] logger - ERROR - Error communicating with Groq API: Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+[2025-09-30 11:33:00,543] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:33:00] "POST /api/chat HTTP/1.1" 200 -
+[2025-09-30 11:33:08,830] werkzeug - INFO -  * Detected change in 'C:\\Users\\Student\\Desktop\\Custom-ChatGPT\\App\\api_client.py', reloading

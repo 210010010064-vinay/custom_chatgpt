@@ -1,0 +1,21 @@
+[2025-09-30 12:07:57,394] logger - INFO - Flask application starting...
+[2025-09-30 12:07:57,396] werkzeug - WARNING -  * Debugger is active!
+[2025-09-30 12:07:57,396] werkzeug - INFO -  * Debugger PIN: 114-658-646
+[2025-09-30 12:08:02,511] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:08:02] "GET / HTTP/1.1" 200 -
+[2025-09-30 12:08:02,539] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:08:02] "[33mGET /static/images/Apexiq-logo-whitebg.jpeg HTTP/1.1[0m" 404 -
+[2025-09-30 12:08:02,540] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:08:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2025-09-30 12:08:05,994] logger - INFO - Sending messages to Groq API...
+[2025-09-30 12:08:06,260] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+[2025-09-30 12:08:06,260] logger - ERROR - Error communicating with Groq API: Error code: 404 - {'error': {'message': 'The model `mistral-small-3` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+Traceback (most recent call last):
+  File "C:\Users\Student\Desktop\Custom-ChatGPT\App\api_client.py", line 23, in get_response
+    chat_completion = self.client.chat.completions.create(
+  File "C:\Users\Student\Desktop\Custom-ChatGPT\venv\lib\site-packages\groq\resources\chat\completions.py", line 456, in create
+    return self._post(
+  File "C:\Users\Student\Desktop\Custom-ChatGPT\venv\lib\site-packages\groq\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\Student\Desktop\Custom-ChatGPT\venv\lib\site-packages\groq\_base_client.py", line 1044, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.NotFoundError: Error code: 404 - {'error': {'message': 'The model `mistral-small-3` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+[2025-09-30 12:08:06,260] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 12:08:06] "POST /api/chat HTTP/1.1" 200 -
+[2025-09-30 12:08:28,710] werkzeug - INFO -  * Detected change in 'C:\\Users\\Student\\Desktop\\Custom-ChatGPT\\app.py', reloading

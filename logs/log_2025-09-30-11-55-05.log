@@ -1,0 +1,12 @@
+[2025-09-30 11:55:05,270] logger - INFO - Flask application starting...
+[2025-09-30 11:55:05,288] werkzeug - WARNING -  * Debugger is active!
+[2025-09-30 11:55:05,292] werkzeug - INFO -  * Debugger PIN: 114-658-646
+[2025-09-30 11:55:11,866] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:55:11] "GET / HTTP/1.1" 200 -
+[2025-09-30 11:55:11,924] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:55:11] "[33mGET /static/images/Apexiq-logo-whitebg.jpeg HTTP/1.1[0m" 404 -
+[2025-09-30 11:55:11,925] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:55:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2025-09-30 11:55:11,950] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:55:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-09-30 11:55:19,315] logger - INFO - Sending messages to Groq API...
+[2025-09-30 11:55:19,523] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+[2025-09-30 11:55:19,523] logger - ERROR - Error communicating with Groq API: Error code: 404 - {'error': {'message': 'The model `mistral-small-3` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+[2025-09-30 11:55:19,524] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:55:19] "POST /api/chat HTTP/1.1" 200 -
+[2025-09-30 11:58:47,492] werkzeug - INFO -  * Detected change in 'C:\\Users\\Student\\Desktop\\Custom-ChatGPT\\App\\api_client.py', reloading

@@ -1,0 +1,20 @@
+[2025-09-30 11:45:24,720] logger - INFO - Flask application starting...
+[2025-09-30 11:45:24,735] werkzeug - WARNING -  * Debugger is active!
+[2025-09-30 11:45:24,745] werkzeug - INFO -  * Debugger PIN: 114-658-646
+[2025-09-30 11:45:28,646] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:45:28] "GET / HTTP/1.1" 200 -
+[2025-09-30 11:45:28,694] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:45:28] "[33mGET /static/images/Ap[2025-09-30 11:51:29,893] werkzeug - INFO -  * Restarting with stat
+ werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:45:28] "GET /static/css/styles.css HTTP/1.1" 200 -
+[2025-09-30 11:45:28,720] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:45:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-09-30 11:45:34,836] logger - INFO - Sending messages to Groq API...
+[2025-09-30 11:45:35,930] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+[2025-09-30 11:45:35,930] logger - ERROR - Error communicating with Groq API: Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+[2025-09-30 11:45:35,931] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:45:35] "POST /api/chat HTTP/1.1" 200 -
+[2025-09-30 11:48:05,986] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:48:05] "GET / HTTP/1.1" 200 -
+[2025-09-30 11:48:06,041] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:48:06] "[33mGET /static/images/Apexiq-logo-whitebg.jpeg HTTP/1.1[0m" 404 -
+[2025-09-30 11:48:06,042] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:48:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2025-09-30 11:48:06,058] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:48:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-09-30 11:48:12,308] logger - INFO - Sending messages to Groq API...
+[2025-09-30 11:48:12,572] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+[2025-09-30 11:48:12,572] logger - ERROR - Error communicating with Groq API: Error code: 400 - {'error': {'message': 'The model `mistral-saba-24b` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+[2025-09-30 11:48:12,572] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 11:48:12] "POST /api/chat HTTP/1.1" 200 -
+[2025-09-30 11:51:29,868] werkzeug - INFO -  * Detected change in 'C:\\Users\\Student\\Desktop\\Custom-ChatGPT\\App\\api_client.py', reloading
