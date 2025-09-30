@@ -1,0 +1,11 @@
+[2025-09-30 13:36:40,318] logger - INFO - Flask application starting...
+[2025-09-30 13:36:40,326] werkzeug - WARNING -  * Debugger is active!
+[2025-09-30 13:36:40,330] werkzeug - INFO -  * Debugger PIN: 774-772-058
+[2025-09-30 13:36:43,956] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 13:36:43] "GET / HTTP/1.1" 200 -
+[2025-09-30 13:36:43,998] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 13:36:43] "[33mGET /static/images/Apexiq-logo-whitebg.jpeg HTTP/1.1[0m" 404 -
+[2025-09-30 13:36:43,999] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 13:36:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2025-09-30 13:36:44,019] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 13:36:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-09-30 13:36:47,435] logger - INFO - Sending messages to Groq API...
+[2025-09-30 13:36:47,707] httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-09-30 13:36:47,723] logger - INFO - Received response from Groq API.
+[2025-09-30 13:36:47,723] werkzeug - INFO - 127.0.0.1 - - [30/Sep/2025 13:36:47] "POST /api/chat HTTP/1.1" 200 -
